@@ -1,0 +1,55 @@
+.main_container {
+  width: auto;
+  height: 100vh;
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  margin: 25px;
+
+  .cac_button {
+    display: flex;
+    justify-content: center;
+    margin: 15px;
+
+    button {
+      background-color: #1a73e8db;
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 18px;
+      &:hover {
+        background-color: #0565e2;
+        font-weight: 700;
+      }
+    }
+  }
+
+  .cac_label {
+    display: flex;
+    justify-content: space-around;
+    font-size: 20px;
+    font-weight: 700;
+  }
+
+  .cac_input {
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid gray;
+    margin: 10px;
+
+    .cac_textArea {
+      width: 100%;
+      border: none;
+      border-right: 1px solid gray;
+    }
+
+    .cac_input_div {
+        width: 100%;
+    }
+    .cac_p {
+      overflow-y: scroll;
+      height: 63vh;
+    }
+  }
+}

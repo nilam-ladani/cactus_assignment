@@ -1,0 +1,21 @@
+<div class="main_container">
+    <form [formGroup]="headerform" (ngSubmit)="submitForm(headerform.value)">
+        <div class="cac_button">
+            <button type="submit">Parse Object</button>
+        </div>
+        <div class="cac_label">
+            <label>Input Json</label>
+            <label>Output Json</label>
+        </div>
+        <div class="cac_input">
+            <div class="cac_input_div">
+                <textarea placeholder="" formControlName="input" rows="40" class="cac_textArea">
+                    </textarea>
+            </div>
+            <div class="cac_input_div">
+                <pre class="cac_p">{{outputJson}}</pre>
+            </div>
+        </div>
+    </form>
+</div>
+

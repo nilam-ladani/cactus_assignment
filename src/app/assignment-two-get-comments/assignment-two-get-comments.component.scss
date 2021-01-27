@@ -1,0 +1,21 @@
+.main_div {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  h1 {
+    text-align: center;
+    color: #0061e1db;
+  }
+  .cac_articleName {
+    padding: 25px;
+    text-align: justify;
+  }
+  .cac_comment_div {
+    background: #c8eaff;
+    padding: 5px;
+    border-radius: 12px;
+    padding-left: 18px;
+    margin: 5px;
+    .cac_name {
+      font-weight: 800;
+    }
+  }
+}

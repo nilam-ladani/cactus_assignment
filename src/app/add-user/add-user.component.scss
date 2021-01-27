@@ -1,0 +1,51 @@
+form {
+  border: 5px solid #f1f1f1;
+  margin-left: 30%;
+  margin-right: 30%;
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+
+}
+input {
+  width: 100%;
+  padding: 16px 8px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+button {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    background-color: #1a73e8db;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    &:hover {
+      background-color: #0565e2;
+      font-weight: 700;
+    }
+  }
+h1 {
+  text-align: center;
+  font-size: 18;
+}
+button:hover {
+  opacity: 0.8;
+}
+.formcontainer {
+  text-align: center;
+  margin: 24px 50px 12px;
+}
+.container {
+  padding: 16px 0;
+  text-align: left;
+}
+
+
+.cac_error {
+  color: red;
+  font-size: 13px;
+}

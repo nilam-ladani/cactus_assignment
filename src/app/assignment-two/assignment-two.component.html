@@ -1,0 +1,43 @@
+<!-- <div>
+    <table id="users">
+    <tr>
+      <th *ngFor="let col of columns">
+        {{col}}
+      </th>
+    </tr>
+    <tr *ngFor="let user of users">
+      <td *ngFor="let col of index">
+        {{user[col]}}
+      </td>
+    </tr>
+  </table>
+</div> -->
+
+<div class="main_div">
+  <div style="display: flex; justify-content: space-between;">
+    <div class="cac_button">
+      <button routerLink="/addUser">Add User</button>
+    </div>
+    <div id="listingTable">
+      <a (click)=prevPage() id="btn_prev" title="Previous Page">&laquo;</a>
+      <a (click)=nextPage() id="btn_next" title="Next Page">&raquo;</a>
+      <span id="page"> Page: {{this.current_page}}</span>
+    </div>
+  </div>
+  <table class="users">
+    <tr>
+      <th>Title</th>
+      <th>Body</th>
+      <th>Author Name</th>
+    </tr>
+    <tr *ngFor="let user of users">
+      <td>{{user.title}}</td>
+      <td>{{user.body.substring(0, 120)}}
+        <span class="cac_seeMore" (click)="showCommentsDetail(user.id, user.body)">see more...</span>
+      </td>
+      <td>{{user.name}}</td>
+    </tr>
+  </table>
+
+
+</div>

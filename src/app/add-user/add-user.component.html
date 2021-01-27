@@ -1,0 +1,22 @@
+<body>
+  <form [formGroup]="AddUserForm" (ngSubmit)="onSubmit($event)">
+    <h1>Add User</h1>
+    <div class="formcontainer">
+      <div class="container">
+        <div>
+          <label><strong>Username</strong></label>
+          <input type="text" placeholder="Enter Username" formControlName="userName" required>
+          <span class="cac_error" *ngIf="AddUserForm.controls.userName.errors?.required">User Name is required!</span>
+        </div>
+        <div style="margin-top: 13px;">
+          <label><strong>E-mail</strong></label>
+          <input type="text" placeholder="Enter E-mail" formControlName="email" required>
+          <span class="cac_error" *ngIf="AddUserForm.controls.email.errors?.required">Email is required!</span>
+          <span class="cac_error" *ngIf="AddUserForm.controls.email.errors?.email">Enter valid Email Id!</span>
+        </div>
+      </div>
+      <button type="submit"><strong>Submit</strong></button>
+      <span class="cac_error" *ngIf="validateUser"> User Alreday exist!</span>
+    </div>
+  </form>
+</body>

@@ -1,0 +1,11 @@
+<div class="main_div">
+    <h1>Article</h1>
+    <p class="cac_articleName">{{this.article}}</p>
+    <h3>Comments:</h3>
+    <div *ngFor="let article of articles" class="cac_comment_div">
+        <p class="cac_name">{{article.name}}:</p>
+        <p>
+            {{article.body}}
+        </p>
+    </div>
+</div>
